@@ -13,6 +13,8 @@
 
 #include "check_crypto_config.h"
 #include "psa/crypto.h"
+#include "psa/crypto_driver_contexts_primitives.h"
+#include "psa/crypto_driver_contexts_composites.h"
 #include "psa/crypto_values.h"
 
 #include "psa_crypto_cipher.h"

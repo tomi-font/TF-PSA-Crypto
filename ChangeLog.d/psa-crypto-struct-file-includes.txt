@@ -1,0 +1,7 @@
+Bugfix
+   * Fix the build of the library when MBEDTLS_PSA_CRYPTO_STRUCT_FILE
+     replaces psa/crypto_struct.h with a header that does not include the
+     driver context definitions, as a client whose operation objects are
+     handles to a separate service has no reason to. Internal headers now
+     include those definitions themselves instead of relying on
+     psa/crypto_struct.h to have done so.

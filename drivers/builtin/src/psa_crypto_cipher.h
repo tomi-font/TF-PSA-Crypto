@@ -11,6 +11,8 @@
 
 #include <mbedtls/private/cipher.h>
 #include <psa/crypto.h>
+#include <psa/crypto_driver_contexts_primitives.h>
+#include <psa/crypto_driver_contexts_composites.h>
 
 /** Get Mbed TLS cipher information given the cipher algorithm PSA identifier
  *  as well as the PSA type and size of the key to be used with the cipher

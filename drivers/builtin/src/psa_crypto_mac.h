@@ -10,6 +10,8 @@
 #define TF_PSA_CRYPTO_PSA_CRYPTO_MAC_H
 
 #include <psa/crypto.h>
+#include <psa/crypto_driver_contexts_primitives.h>
+#include <psa/crypto_driver_contexts_composites.h>
 
 /** Calculate the MAC (message authentication code) of a message using Mbed TLS.
  *

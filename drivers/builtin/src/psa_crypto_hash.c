@@ -11,6 +11,8 @@
 #if defined(MBEDTLS_PSA_CRYPTO_C)
 
 #include <psa/crypto.h>
+#include <psa/crypto_driver_contexts_primitives.h>
+#include <psa/crypto_driver_contexts_composites.h>
 #include "psa_crypto_core.h"
 #include "psa_crypto_hash.h"
 

@@ -10,6 +10,8 @@
 #define TF_PSA_CRYPTO_PSA_CRYPTO_ECP_H
 
 #include <psa/crypto.h>
+#include <psa/crypto_driver_contexts_primitives.h>
+#include <psa/crypto_driver_contexts_composites.h>
 #include <mbedtls/private/ecp.h>
 
 /** Load the contents of a key buffer into an internal ECP representation

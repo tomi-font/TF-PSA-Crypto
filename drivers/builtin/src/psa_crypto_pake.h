@@ -10,6 +10,8 @@
 #define TF_PSA_CRYPTO_PSA_CRYPTO_PAKE_H
 
 #include <psa/crypto.h>
+#include <psa/crypto_driver_contexts_primitives.h>
+#include <psa/crypto_driver_contexts_composites.h>
 
 /** Set the session information for a password-authenticated key exchange.
  *

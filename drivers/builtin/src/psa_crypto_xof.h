@@ -10,6 +10,8 @@
 #define TF_PSA_CRYPTO_PSA_CRYPTO_XOF_H
 
 #include <psa/crypto.h>
+#include <psa/crypto_driver_contexts_primitives.h>
+#include <psa/crypto_driver_contexts_composites.h>
 
 /** Set up a multipart XOF operation using built-in code.
  *

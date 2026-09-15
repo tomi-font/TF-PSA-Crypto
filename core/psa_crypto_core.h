@@ -12,6 +12,8 @@
 #include "tf-psa-crypto/build_info.h"
 
 #include "psa/crypto.h"
+#include "psa/crypto_driver_contexts_primitives.h"
+#include "psa/crypto_driver_contexts_composites.h"
 #if defined(MBEDTLS_THREADING_C)
 #include "mbedtls/threading.h"
 #endif
