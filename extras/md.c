@@ -47,10 +47,6 @@
 #include "psa_util_internal.h"
 #endif
 
-#if defined(MBEDTLS_MD_SOME_PSA)
-#include "psa_crypto_core.h"
-#endif
-
 #include "mbedtls/platform.h"
 
 #include <string.h>

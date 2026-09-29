@@ -1,0 +1,8 @@
+Bugfix
+   * Fix the build of a client-only library (MBEDTLS_PSA_CRYPTO_CLIENT
+     without MBEDTLS_PSA_CRYPTO_C) when MBEDTLS_PSA_CRYPTO_STRUCT_FILE
+     replaces psa/crypto_struct.h with a header that does not include the
+     driver context definitions. The generated driver wrapper file and
+     extras/md.c no longer pull in the built-in driver headers in that
+     configuration, and mbedtls/psa_util.h now includes mbedtls/md.h for
+     the mbedtls_md_type_t its client helpers take.

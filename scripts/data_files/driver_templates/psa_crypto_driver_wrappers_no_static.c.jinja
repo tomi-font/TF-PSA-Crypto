@@ -10,6 +10,9 @@
 
 /* BEGIN-common headers */
 #include "tf_psa_crypto_common.h"
+
+#if defined(MBEDTLS_PSA_CRYPTO_C)
+
 #include "psa_crypto_aead.h"
 #include "psa_crypto_cipher.h"
 #include "psa_crypto_core.h"
@@ -25,8 +28,6 @@
 
 #include "mbedtls/platform.h"
 /* END-common headers */
-
-#if defined(MBEDTLS_PSA_CRYPTO_C)
 
 /* BEGIN-driver headers */
 {% for driver in drivers -%}
